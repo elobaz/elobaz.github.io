@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>진주헌 Mandarin Garden</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Pretendard,Noto Sans KR,sans-serif;
+}
+
+/* HEADER */
+header{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  padding:32px 60px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  z-index:100;
+}
+
+/* LOGO BOX */
+.main-logo{
+  border:1.5px solid #fff;
+  padding:12px 18px;
+  text-decoration:none;
+}
+
+.main-logo span{
+  color:#fff;
+  font-size:14px;
+  letter-spacing:2px;
+}
+
+/* NAV */
+nav a{
+  margin-left:36px;
+  font-size:14px;
+  letter-spacing:1px;
+  text-decoration:none;
+  color:#fff;
+}
+
+/* HERO */
+.hero{
+  position:relative;
+  width:100%;
+  height:100vh;
+  overflow:hidden;
+}
+
+.hero video{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/* TEXT */
+.hero-text{
+  position:absolute;
+  left:50%;
+  top:55%;
+  transform:translate(-50%,-50%);
+  text-align:center;
+  color:#fff;
+}
+
+.hero-text h1{
+  font-size:42px;
+  letter-spacing:6px;
+  font-weight:500;
+  margin-bottom:16px;
+}
+
+.hero-text p{
+  font-size:16px;
+  letter-spacing:3px;
+  opacity:0.9;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  header{
+    padding:20px 24px;
+  }
+  nav a{
+    margin-left:20px;
+    font-size:13px;
+  }
+  .hero-text h1{
+    font-size:28px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <a href="index.html" class="main-logo">
+    <span>JINJUHEON</span>
+  </a>
+  <nav>
+    <a href="101.html">101동</a>
+    <a href="102.html">102동</a>
+    <a href="reservation.html">예약</a>
+    <a href="around.html">숙소소개</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <!-- loop 제거 : 마지막 프레임에서 멈춤 -->
+  <video autoplay muted playsinline>
+    <source src="진주헌메인영상.mp4" type="video/mp4">
+  </video>
+
+  <div class="hero-text">
+    <h1>진주헌</h1>
+    <p>MANDARIN GARDEN</p>
+  </div>
+</section>
+
+</body>
+</html>

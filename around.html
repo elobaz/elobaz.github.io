@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>진주헌 Mandarin Garden | 숙소소개</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Pretendard, Noto Sans KR, sans-serif;
+  color:#000;
+}
+body{background:#fff}
+
+/* HEADER */
+header{
+  position:fixed;
+  top:0; left:0;
+  width:100%;
+  padding:28px 60px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:#fff;
+  z-index:100;
+}
+header img{height:84px}
+nav a{
+  margin-left:36px;
+  font-size:14px;
+  letter-spacing:1px;
+  text-decoration:none;
+  color:#000;
+}
+
+/* CONTENT */
+.container{
+  max-width:1200px;
+  margin:0 auto;
+  padding:180px 24px 120px;
+}
+
+/* SPLIT */
+.split{
+  display:flex;
+  align-items:center;
+  gap:80px;
+  margin-bottom:160px;
+}
+.split img{
+  width:50%;
+  object-fit:cover;
+}
+.text{
+  width:50%;
+}
+
+.line{
+  width:60px;
+  height:1px;
+  background:#000;
+  margin-bottom:32px;
+}
+
+.text h2{
+  font-size:22px;
+  letter-spacing:3px;
+  margin-bottom:40px;
+}
+
+.text p{
+  font-size:15px;
+  line-height:2.1;
+}
+
+/* REGISTER */
+.register{
+  margin-top:160px;
+  padding-top:40px;
+  border-top:1px solid #ddd;
+}
+.register h3{
+  font-size:13px;
+  color:#777;
+  margin-bottom:12px;
+}
+.register li{
+  font-size:13px;
+  color:#777;
+  line-height:1.8;
+}
+
+/* MOBILE */
+@media(max-width:900px){
+  header{padding:20px 24px}
+  header img{height:64px}
+  nav a{margin-left:20px;font-size:13px}
+  .split{flex-direction:column;gap:40px}
+  .split img,.text{width:100%}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <a href="index.html">
+    <img src="진주헌로고.svg" alt="진주헌">
+  </a>
+  <nav>
+    <a href="101.html">101동</a>
+    <a href="102.html">102동</a>
+    <a href="reservation.html">예약</a>
+    <a href="around.html">숙소소개</a>
+  </nav>
+</header>
+
+<div class="container">
+
+  <!-- 진주헌 위치 -->
+  <section class="split">
+    <img src="진주헌위치.png" alt="진주헌 위치">
+    <div class="text">
+      <div class="line"></div>
+      <h2>진주헌의 위치</h2>
+      <p>
+        진주헌 Mandarin Garden은<br>
+        제주 서귀포시 상예동의 조용한 만다린 농장 안쪽에 자리하고 있습니다.<br><br>
+        주변으로는 탁 트인 녹지와 귤밭이 펼쳐져 있으며,<br>
+        번잡함에서 벗어나 온전히 쉬어갈 수 있는 환경을 제공합니다.<br><br>
+        숙소 인근에는 자연스럽게 이어지는 산책로가 있어<br>
+        아침과 저녁, 제주 자연을 천천히 걸으며 즐기기에 좋습니다.
+      </p>
+    </div>
+  </section>
+
+  <!-- 등록 세부 정보 -->
+  <div class="register">
+    <h3>등록 세부 정보</h3>
+    <ul>
+      <li>발급 지역 : 제주특별자치도 서귀포시 상예동</li>
+      <li>허가 유형 : 농어촌민박사업</li>
+      <li>허가 번호 : 2025-5호</li>
+    </ul>
+  </div>
+
+</div>
+
+</body>
+</html>

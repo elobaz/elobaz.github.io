@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>진주헌 Mandarin Garden | 101동</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Pretendard,Noto Sans KR,sans-serif;color:#000}
+body{background:#fff}
+
+/* HEADER */
+header{
+  position:fixed;top:0;left:0;width:100%;
+  padding:28px 60px;
+  display:flex;justify-content:space-between;align-items:center;
+  background:#fff;z-index:100;
+}
+header img{height:84px}
+nav a{
+  margin-left:36px;
+  font-size:14px;
+  letter-spacing:1px;
+  text-decoration:none;
+}
+
+/* SECTION */
+.section{display:flex;min-height:100vh}
+.section.reverse{flex-direction:row-reverse}
+.img, .txt{width:50%}
+.img img{width:100%;height:100%;object-fit:cover}
+.txt{padding:160px 110px}
+.line{width:60px;height:1px;background:#000;margin-bottom:40px}
+.txt h3{font-size:22px;letter-spacing:2px;margin-bottom:40px}
+.txt li{font-size:15px;line-height:2}
+
+/* MOBILE */
+@media(max-width:768px){
+  header{padding:20px}
+  header img{height:64px}
+  .section,.section.reverse{flex-direction:column}
+  .img,.txt{width:100%}
+  .txt{padding:100px 28px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <a href="index.html"><img src="진주헌로고.svg"></a>
+  <nav>
+    <a href="101.html">101동</a>
+    <a href="102.html">102동</a>
+    <a href="reservation.html">예약</a>
+    <a href="around.html">숙소소개</a>
+  </nav>
+</header>
+
+<!-- BEDROOM 1 -->
+<section class="section">
+  <div class="img"><img src="101동 침실.avif"></div>
+  <div class="txt">
+    <div class="line"></div>
+    <h3>BEDROOM 1</h3>
+    <ul>
+      <li>메인 침실</li>
+      <li>자연광이 부드럽게 들어오는 공간</li>
+      <li>차분하고 안정적인 분위기</li>
+    </ul>
+  </div>
+</section>
+
+<!-- BEDROOM 2 -->
+<section class="section reverse">
+  <div class="img"><img src="101동침실2.avif"></div>
+  <div class="txt">
+    <div class="line"></div>
+    <h3>BEDROOM 2</h3>
+    <ul>
+      <li>아늑한 서브 침실</li>
+      <li>여유로운 휴식을 위한 공간</li>
+    </ul>
+  </div>
+</section>
+
+<!-- SPACE -->
+<section class="section">
+  <div class="img"><img src="101동 주방.png"></div>
+  <div class="txt">
+    <div class="line"></div>
+    <h3>SPACE</h3>
+    <ul>
+      <li>주방과 생활공간이 자연스럽게 이어진 구조</li>
+      <li>머무는 동안 편안한 일상</li>
+    </ul>
+  </div>
+</section>
+
+<!-- BATHROOM (새 사진 적용) -->
+<section class="section reverse">
+  <div class="img"><img src="101동화장실.jpg"></div>
+  <div class="txt">
+    <div class="line"></div>
+    <h3>BATHROOM</h3>
+    <ul>
+      <li>깔끔하고 단정한 욕실</li>
+      <li>실사용에 집중한 구성</li>
+    </ul>
+  </div>
+</section>
+
+</body>
+</html>
