@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>진주헌 Mandarin Garden</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Pretendard,Noto Sans KR,sans-serif;
+}
+
+/* HEADER */
+header{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  padding:32px 60px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  z-index:9999;
+}
+
+/* LOGO */
+.main-logo{
+  border:1.5px solid #fff;
+  padding:12px 18px;
+  text-decoration:none;
+}
+
+.main-logo span{
+  color:#fff;
+  font-size:14px;
+  letter-spacing:2px;
+}
+
+/* RIGHT AREA */
+.header-right{
+  display:flex;
+  align-items:center;
+}
+
+/* NAV */
+nav{
+  display:flex;
+  align-items:center;
+}
+
+nav a{
+  margin-left:36px;
+  font-size:14px;
+  letter-spacing:1px;
+  text-decoration:none;
+  color:#fff;
+}
+
+/* LANGUAGE BOX */
+.lang-buttons{
+  margin-left:30px;
+  border:1.5px solid #fff;   /* 🔥 전체 테두리 */
+  padding:6px 10px;
+  border-radius:6px;
+  background:rgba(0,0,0,0.3);
+  backdrop-filter:blur(4px);
+}
+
+.lang-buttons button{
+  margin:0 4px;
+  font-size:12px;
+  padding:6px 10px;
+  background:transparent;
+  border:1px solid #fff;     /* 🔥 버튼 테두리 */
+  color:#fff;
+  cursor:pointer;
+  border-radius:4px;
+  transition:0.2s;
+}
+
+.lang-buttons button:hover{
+  background:#fff;
+  color:#000;
+}
+
+/* HERO */
+.hero{
+  position:relative;
+  width:100%;
+  height:100vh;
+  overflow:hidden;
+}
+
+.hero video{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  z-index:-1;
+}
+
+.hero-text{
+  position:absolute;
+  left:50%;
+  top:55%;
+  transform:translate(-50%,-50%);
+  text-align:center;
+  color:#fff;
+}
+
+.hero-text h1{
+  font-size:42px;
+  letter-spacing:6px;
+  font-weight:500;
+  margin-bottom:16px;
+}
+
+.hero-text p{
+  font-size:16px;
+  letter-spacing:3px;
+  opacity:0.9;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  header{
+    padding:20px 24px;
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .header-right{
+    width:100%;
+    justify-content:space-between;
+    margin-top:14px;
+  }
+
+  nav a{
+    margin:0 12px;
+    font-size:13px;
+  }
+
+  .lang-buttons{
+    margin-left:0;
+    margin-top:10px;
+  }
+
+  .hero-text h1{
+    font-size:28px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <a href="index.html" class="main-logo">
+    <span>JINJUHEON</span>
+  </a>
+
+  <div class="header-right">
+    <nav>
+      <a href="101.html" data-i18n="nav101">101동</a>
+      <a href="102.html" data-i18n="nav102">102동</a>
+      <a href="around.html" data-i18n="navAbout">숙소소개</a>
+      <a href="reservation.html" data-i18n="navReservation">예약</a>
+    </nav>
+
+    <div class="lang-buttons">
+      <button onclick="changeLanguage('ko')">KO</button>
+      <button onclick="changeLanguage('en')">EN</button>
+      <button onclick="changeLanguage('fr')">FR</button>
+      <button onclick="changeLanguage('zh')">中文</button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <video autoplay muted playsinline>
+    <source src="진주헌메인영상.mp4" type="video/mp4">
+  </video>
+
+  <div class="hero-text">
+    <h1 data-i18n="mainTitle">진주헌</h1>
+    <p data-i18n="mainSub">MANDARIN GARDEN</p>
+  </div>
+</section>
+
+<script src="lang.js"></script>
+
+</body>
+</html>
